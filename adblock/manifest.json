@@ -1,8 +1,8 @@
 {
-    "name": "reklam sikici",
+    "name": "reklam siken",
     "description": "Spotify reklamlarını engeller. Ses, banner, leaderboard ve sponsorlu içerik reklamlarını devre dışı bırakır.",
     "preview": "buraksakin.png",
-    "main": "reklam-sikici.js",
+    "main": "reklam-siken.js",
     "readme": "README.md",
     "branch": "main",
     "authors": [

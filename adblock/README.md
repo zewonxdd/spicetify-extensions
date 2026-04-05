@@ -1,8 +1,8 @@
-# reklam sikici 🛡️
+# reklam siken 🛡️
 
 Spotify için reklam engelleme eklentisi. Ses, banner, leaderboard ve sponsorlu içerik reklamlarını devre dışı bırakır.
 
-![reklam sikici](buraksakin.jpg)
+![reklam siken](buraksakin.png)
 
 ## Özellikler
 
@@ -16,21 +16,21 @@ Spotify için reklam engelleme eklentisi. Ses, banner, leaderboard ve sponsorlu 
 
 ### Spicetify CLI ile (Manuel)
 
-1. `reklam-sikici.js` dosyasını indirin
+1. `reklam-siken.js` dosyasını indirin
 2. Dosyayı Spicetify Extensions klasörüne kopyalayın:
    ```
    %appdata%\spicetify\Extensions\
    ```
 3. Terminalde çalıştırın:
    ```powershell
-   spicetify config extensions reklam-sikici.js
+   spicetify config extensions reklam-siken.js
    spicetify apply
    ```
 
 ## Kaldırma
 
 ```powershell
-spicetify config extensions reklam-sikici.js-
+spicetify config extensions reklam-siken.js-
 spicetify apply
 ```
 
