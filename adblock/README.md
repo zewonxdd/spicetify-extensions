@@ -1,56 +1,48 @@
-# adblockify
+# reklam sikici 🛡️
 
-Stream Spotify music without interruptions - Block ads instantly, with ease.
+Spotify için reklam engelleme eklentisi. Ses, banner, leaderboard ve sponsorlu içerik reklamlarını devre dışı bırakır.
 
-> [!NOTE]
-> Premium features include:
-> - No forced shuffle
-> - No forced repeat
-> - Modifiable queue
-> - No ads between songs and in the UI
-> - No upsell popups about premium or popup ads
+![reklam sikici](buraksakin.jpg)
 
-> [!CAUTION]
-> This extension **won't**:
-> - Unlock native lyrics page
-> - Let you download songs
-> - Allow to change song quality to `Very High`
-> - Allow you to listen with friends in Jams
+## Özellikler
 
-## Install
+- 🔇 **Ses reklamlarını engeller** — Şarkılar arasındaki reklam seslerini kapatır
+- 🚫 **Banner reklamları gizler** — Arayüzdeki görsel reklamları kaldırır
+- 🎯 **Sponsorlu içerikleri kaldırır** — Sponsorlu çalma listelerini ve önerileri engeller
+- 💎 **Premium özellik taklidi** — Mini player, akıllı karıştırma gibi özellikleri açar
+- ⚡ **Otomatik güncelleme** — Reklam slot ayarlarını periyodik olarak yeniler
 
-1. Copy `adblock.js` to extensions folder based on your OS or install it via **[marketplace](https://github.com/spicetify/spicetify-marketplace)**
+## Kurulum
 
-| **Platform**   | **Path**                                                                             |
-|----------------|--------------------------------------------------------------------------------------|
-| **Windows**    | `%appdata%\spicetify\Extensions\`                                                    |
-| **Linux**      | `~/.config/spicetify/Extensions` or `$XDG_CONFIG_HOME/spicetify/Extensions/`         |
-| **MacOS**      | `~/.config/spicetify/Extensions` or `~/.spicetify/Extensions`                        |
+### Spicetify CLI ile (Manuel)
 
-After putting the extension file into the correct folder, run the following command to install the extension or install through marketplace:
+1. `reklam-sikici.js` dosyasını indirin
+2. Dosyayı Spicetify Extensions klasörüne kopyalayın:
+   ```
+   %appdata%\spicetify\Extensions\
+   ```
+3. Terminalde çalıştırın:
+   ```powershell
+   spicetify config extensions reklam-sikici.js
+   spicetify apply
+   ```
 
-```sh
-spicetify config extensions adblock.js
+## Kaldırma
+
+```powershell
+spicetify config extensions reklam-sikici.js-
 spicetify apply
 ```
 
-Note: Using the `config` command to add the extension will always append the file name to the existing extensions list. It does not replace the whole key's value.
+## Uyumluluk
 
-Or you can manually edit your `config-xpui.ini` file. Add your desired extension filenames in the extensions key, separated them by the | character.
-Example:
+- Spotify Desktop `1.2.82+`
+- Spicetify CLI `2.x`
 
-```ini
-[AdditionalOptions]
-...
-extensions = autoSkipExplicit.js|shuffle+.js|trashbin.js|adblock.js
-```
+## Uyarı
 
-Then run:
+⚠️ Bu eklenti Spotify'ın Hizmet Şartlarını ihlal edebilir. Kendi riskinizle kullanın.
 
-```sh
-spicetify apply
-```
+## Lisans
 
------
-If you find any bugs, please [create a new issue](https://github.com/rxri/spicetify-extensions/issues/new/choose) on the GitHub repo.
-![https://github.com/rxri/spicetify-extensions/issues](https://img.shields.io/github/issues/rxri/spicetify-extensions?logo=github)
+MIT

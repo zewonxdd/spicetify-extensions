@@ -1,0 +1,19 @@
+{
+    "name": "reklam sikici",
+    "description": "Spotify reklamlarını engeller. Ses, banner, leaderboard ve sponsorlu içerik reklamlarını devre dışı bırakır.",
+    "preview": "buraksakin.png",
+    "main": "reklam-sikici.js",
+    "readme": "README.md",
+    "branch": "main",
+    "authors": [
+        {
+            "name": "zewonxd"
+        }
+    ],
+    "tags": [
+        "ad blocker",
+        "reklam engelleme",
+        "premium",
+        "spotify"
+    ]
+}
